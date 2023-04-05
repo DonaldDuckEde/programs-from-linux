@@ -2,6 +2,8 @@ header{
     position: fixed;
     background-color: blue;
     width: 100%;
+    height: 70px;
+    margin-top: 200;
     margin-left: -8px;
 }
 h2{
