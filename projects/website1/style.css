@@ -6,6 +6,12 @@ header{
     margin-top: 200;
     margin-left: -8px;
 }
-h2{
+button{
     margin-left: 25px;
+    margin-top: 5px;
+    height: 60px;
+    background: none;
+    border-style: solid;
+    cursor: pointer;
+    
 }
