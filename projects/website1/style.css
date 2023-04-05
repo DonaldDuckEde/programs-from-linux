@@ -13,5 +13,5 @@ button{
     background: none;
     border-style: solid;
     cursor: pointer;
-    
+    border-width: 0px;
 }
