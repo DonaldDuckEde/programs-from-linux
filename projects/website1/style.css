@@ -15,3 +15,11 @@ header{
     cursor: pointer;
     border-width: 0px;
 }
+.navButton1{
+    margin-left: 1700px;
+    background: none;
+    border-style: solid;
+    border-width: 0px;
+    cursor: pointer;
+    height: 30px;
+}
