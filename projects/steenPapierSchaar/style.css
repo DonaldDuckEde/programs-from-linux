@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.screenPreview{
+    height: 100px;
+    background-color: blue;
+    margin-top: 60px;
+    text-align: center;
+}
+.steenDiv, .papierDiv, .schaarDiv{
+    height: 100px;
+    width: 120px;
+    background-color: red;
+    margin: auto;   
+}
