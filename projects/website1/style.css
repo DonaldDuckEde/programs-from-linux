@@ -1,10 +1,10 @@
 header{
     position: fixed;
-    background-color: blue;
     width: 100%;
     height: 70px;
     margin-top: 200;
     margin-left: -8px;
+    background-color: blue;
 }
 .mainSite{
     margin-left: 25px;
@@ -14,10 +14,10 @@ header{
     border-style: solid;
     cursor: pointer;
     border-width: 0px;
+    color: aqua;
 }
 .navButton1{
-    margin-left: 1700px;
-    margin-top: 10px;
+    margin-top: 0px;
     background: none;
     border-style: solid;
     border-width: 0px;
@@ -25,11 +25,16 @@ header{
     height: 30px;
 }
 body{
-
+    background-image: url(./png/background.png);
 }
 nav{
-    height: 70;
+    height: 70px;
     background-color: red;
     width: 400px;
-    margin-left: ;
+    margin-left: 1400px;
+}
+.mainLogoImg{
+    height: 70px;
+    margin-left: 25px;
+    margin-top: 1px;
 }
