@@ -5,17 +5,15 @@ x, y, z = som.split(" ")
 x = float(x)
 z = float(z)
 
+tempInt = 0
+
 if y == "/":
-    x / z = tempInt
-    print(f"{x} {y} {z} = {tempInt}")
+    print(x / y)
 elif y == "*":
-    x * z = tempInt
-    print(f"{x} {y} {z} = {tempInt}")
+    print(x * y)
 elif y == "+":
-    x + z = tempInt
-    print(f"{x} {y} {z} = {tempInt}")
+    print(x + y)
 elif y == "-":
-    x - z = tempInt
-    print(f"{x} {y} {z} = {tempInt}")
+    print(x - y)
 else:
     print("Please enter a valid input.")
