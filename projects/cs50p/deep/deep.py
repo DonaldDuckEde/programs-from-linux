@@ -2,4 +2,7 @@ tempString = input("What is the Answer to the Great Question of Life, the Univer
 
 tempString = tempString.lower()
 
-if tempString == "42"
+if tempString == "42" or "forty-two" or "forty two":
+    print("Yes")
+else:
+    print("No")
