@@ -3,7 +3,7 @@ import copy
 i = 8
 location = "8/ "
 loginKey = "terminal"
-errorDict = {
+errors = {
     "value": "Value error, enter valid input",
     "internal": "Internal error, try again",
     "error": "Error",
