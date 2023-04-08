@@ -6,6 +6,7 @@ location = "8/ "
 while i == 8:
     inputCommand = input(f"{location.strip(' ')}:~$ ")
     
+    # strips the input command so it can be used in the rest of the program
     tempCommand = copy.deepcopy(inputCommand)
     tempCommand1 = copy.deepcopy(inputCommand)
     tempCommand = tempCommand.strip()
