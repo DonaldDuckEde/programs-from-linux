@@ -1,8 +1,15 @@
+import copy
+
 print("This is a terminal")
 
 i = 8
 
 while i == 8:
     location = "8/ "
-    tempCommand = input(f"{location.strip(' ')}:~$ ")
-    False
+    inputCommand = input(f"{location.strip(' ')}:~$ ")
+    
+    tempCommand = copy.deepcopy(inputCommand)
+    string_copy = string_copy.strip()
+    
+    if inputCommand.split():
+        
