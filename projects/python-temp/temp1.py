@@ -1,5 +1,12 @@
 import copy
 
+filesDict = {
+    "1": "1.txt",
+    "2": "2.txt",
+    "3": "3.txt",
+    "4": "4.txt",
+    "5": "5.txt",
+}
 i = 8
 location = "8/ "
 
@@ -18,7 +25,9 @@ while i == 8:
     # this is the simple if else statement
     # that turs out to be way harder then expected
     if mainCommand == "cd":
-        if subCommand == ""
+        print("cd")
     elif mainCommand == "exit":
         break
-    elif mainCommand == "
+    elif mainCommand == "mkdir":
+        filesDict.append(subCommand)
+        print(filesDict)
