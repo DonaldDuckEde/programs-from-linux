@@ -1,12 +1,5 @@
 import copy
 
-filesDict = {
-    "1": "1.txt",
-    "2": "2.txt",
-    "3": "3.txt",
-    "4": "4.txt",
-    "5": "5.txt",
-}
 i = 8
 location = "8/ "
 
@@ -31,3 +24,9 @@ while i == 8:
     elif mainCommand == "mkdir":
         filesDict.append(subCommand)
         print(filesDict)
+    elif mainCommand == "login":
+        inputLoginKey = input("login key: ")
+    elif mainCommand == "register":
+        inputRegister = input("register: ")
+        if inputRegister != "":
+            
