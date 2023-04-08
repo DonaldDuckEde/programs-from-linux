@@ -30,6 +30,8 @@ while i == 8:
             print("loging in...")
             if loginKey == "terminal":
                 print("Please change your login key")
+        else:
+            print("wrong login key")
     elif mainCommand == "register":
         inputRegister = input("register: ")
         if inputRegister != "":
