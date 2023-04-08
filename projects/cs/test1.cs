@@ -4,6 +4,8 @@ namespace main
 {
     class program
     {
-        Console.WriteLine("Hello world");
+        static void Main(string[] args){
+            Console.WriteLine("Hello world");
+        }
     }
 }
