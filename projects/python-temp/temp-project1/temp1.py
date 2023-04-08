@@ -6,6 +6,9 @@ loginKey = "terminal"
 errorDict = {
     "value": "Value error, enter valid input",
     "internal": "Internal error, try again",
+    "error": "Error",
+    "not_found": "Not found",
+    "invalid": "Invalid input",
 }
 
 while i == 8:
@@ -38,6 +41,6 @@ while i == 8:
         inputRegister = input("register: ")
         if inputRegister != "":
             print(f"new password: {inputRegister}")
-            inputRegister = loginKey
+            loginKey = inputRegister
         else:
-            print(errorDict["value"])
+            print(errorDict["invalid"])
