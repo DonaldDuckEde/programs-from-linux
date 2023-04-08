@@ -16,22 +16,20 @@ while i == 8:
     mainCommand = tempCommand.split()[0]
     subCommand = tempCommand1.split()[1]
     
-    # this is the simple if else statement
-    # that turs out to be way harder then expected
     if mainCommand == "cd":
-        print("cd")
+            print("cd")
     elif mainCommand == "exit":
-        break
+            print("exit...")
     elif mainCommand == "mkdir":
-        print("mkdir")
+            print("mkdir")
     elif mainCommand == "login":
         inputLoginKey = input("login key: ")
         if inputLoginKey == loginKey:
             print("loging in...")
             if loginKey == "terminal":
                 print("Please change your login key")
-        else:
-            print("wrong login key")
+            else:
+                print("wrong login key")
     elif mainCommand == "register":
         inputRegister = input("register: ")
         if inputRegister != "":
