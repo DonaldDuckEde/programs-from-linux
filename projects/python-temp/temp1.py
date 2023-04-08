@@ -22,11 +22,10 @@ while i == 8:
     elif mainCommand == "exit":
         break
     elif mainCommand == "mkdir":
-        filesDict.append(subCommand)
-        print(filesDict)
+        print("mkdir")
     elif mainCommand == "login":
         inputLoginKey = input("login key: ")
     elif mainCommand == "register":
         inputRegister = input("register: ")
         if inputRegister != "":
-            
+            print(f"new password: {inputRegister}")
