@@ -3,6 +3,10 @@ import copy
 i = 8
 location = "8/ "
 loginKey = "terminal"
+errorDict = {
+    "value": "Value error, enter valid input",
+    "internal": "Internal error, try again",
+}
 
 while i == 8:
     inputCommand = input(f"{location.strip(' ')}:~$ ")
@@ -14,9 +18,7 @@ while i == 8:
     
     # splits the input command into the main command and the sub command, so it can be read with the simple if else statement
     mainCommand = tempCommand.split()[0]
-    subCommand = tempCommand1.split()[1]
-    
-    
+    # subCommand = tempCommand1.split()[1]
     
     if mainCommand == "cd":
             print("cd")
@@ -37,3 +39,5 @@ while i == 8:
         if inputRegister != "":
             print(f"new password: {inputRegister}")
             inputRegister = loginKey
+        else:
+            print(errorDict["value"])
