@@ -16,6 +16,8 @@ while i == 8:
     mainCommand = tempCommand.split()[0]
     subCommand = tempCommand1.split()[1]
     
+    
+    
     if mainCommand == "cd":
             print("cd")
     elif mainCommand == "exit":
