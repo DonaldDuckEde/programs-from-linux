@@ -2,6 +2,7 @@ import copy
 
 i = 8
 location = "8/ "
+loginKey = "terminal"
 
 while i == 8:
     inputCommand = input(f"{location.strip(' ')}:~$ ")
@@ -25,7 +26,12 @@ while i == 8:
         print("mkdir")
     elif mainCommand == "login":
         inputLoginKey = input("login key: ")
+        if inputLoginKey == loginKey:
+            print("loging in...")
+            if loginKey == "terminal":
+                print("Please change your login key")
     elif mainCommand == "register":
         inputRegister = input("register: ")
         if inputRegister != "":
             print(f"new password: {inputRegister}")
+            inputRegister = loginKey
