@@ -1,9 +1,9 @@
 import copy
 
 i = 8
+Location = "8/ "
 
 while i == 8:
-    location = "8/ "
     inputCommand = input(f"{location.strip(' ')}:~$ ")
     
     tempCommand = copy.deepcopy(inputCommand)
