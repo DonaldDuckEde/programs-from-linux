@@ -9,7 +9,9 @@ while i == 8:
     inputCommand = input(f"{location.strip(' ')}:~$ ")
     
     tempCommand = copy.deepcopy(inputCommand)
-    string_copy = string_copy.strip()
+    tempCommand = tempCommand.strip()
     
-    if inputCommand.split():
-        
+    mainCommand = tempCommand.split()[0]
+    
+    if mainCommand == "cd":
+        print("cd")
