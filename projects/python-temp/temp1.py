@@ -1,7 +1,5 @@
 import copy
 
-print("This is a terminal")
-
 i = 8
 
 while i == 8:
@@ -17,3 +15,4 @@ while i == 8:
         print("cd")
     elif mainCommand == "exit":
         break
+    
