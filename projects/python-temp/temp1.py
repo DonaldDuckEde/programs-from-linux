@@ -15,7 +15,10 @@ while i == 8:
     mainCommand = tempCommand.split()[0]
     subCommand = tempCommand1.split()[1]
     
+    # this is the simple if else statement
+    # that turs out to be way harder then expected
     if mainCommand == "cd":
-        print(f"{location.strip(' ')}:~$ cd {subCommand}")
+        if subCommand == ""
     elif mainCommand == "exit":
         break
+    elif mainCommand == "
