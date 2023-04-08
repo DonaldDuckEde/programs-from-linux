@@ -15,3 +15,5 @@ while i == 8:
     
     if mainCommand == "cd":
         print("cd")
+    elif mainCommand == "exit":
+        break
