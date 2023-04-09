@@ -9,6 +9,7 @@ errors = {
     "error": "Error",
     "not_found": "Not found",
     "invalid": "Invalid input",
+    "no-acces": "No Acces granted",
 }
 
 while i == 8:
