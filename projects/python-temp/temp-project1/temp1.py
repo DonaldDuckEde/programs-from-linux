@@ -43,4 +43,4 @@ while i == 8:
             print(f"new password: {inputRegister}")
             loginKey = inputRegister
         else:
-            print(errorDict["invalid"])
+            print(errors["invalid"])
