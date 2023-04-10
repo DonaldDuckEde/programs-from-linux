@@ -3,6 +3,7 @@ import copy
 i = 8
 location = "8/ "
 loginKey = "terminal"
+# Try to make a function that looks what wrong and gives the right error message
 errors = {
     "value": "Value error, enter valid input",
     "internal": "Internal error, try again",
