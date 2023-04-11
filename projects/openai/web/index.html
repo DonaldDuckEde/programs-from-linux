@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OpenAI Chat</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./script.js"></script>
+	<title>Spotify Song Downloader</title>
 </head>
 <body>
-	<h1>OpenAI Chat</h1>
-	<div id="response"></div>
-	<script>
-		const options = {
-			method: 'POST',
-			headers: {
-				'content-type': 'application/json',
-				'X-RapidAPI-Key': 'bd7537db29mshc28ea09170e58efp1afa22jsn8690e58746f2',
-				'X-RapidAPI-Host': 'openai80.p.rapidapi.com'
-			},
-			body: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"Hello!"}]}'
-		};
+	<div>
+		<label for="song-name">Enter a song name:</label>
+		<input type="text" id="song-name">
+		<button id="search-btn">Search</button>
+	</div>
+	<div id="download-link-container"></div>
 
-		fetch('https://openai80.p.rapidapi.com/chat/completions', options)
-			.then(response => response.json())
-			.then(response => {
-				document.getElementById("response").innerHTML = JSON.stringify(response);
-			})
-			.catch(err => console.error(err));
+	<script>
+		const searchBtn = document.getElementById('search-btn');
+		const songNameInput = document.getElementById('song-name');
+		const downloadLinkContainer = document.getElementById('download-link-container');
+
+		searchBtn.addEventListener('click', searchSong);
+
+		function searchSong() {
+			const songName = songNameInput.value;
+			const options = {
+				method: 'GET',
+				headers: {
+					'X-RapidAPI-Key': 'bd7537db29mshc28ea09170e58efp1afa22jsn8690e58746f2',
+					'X-RapidAPI-Host': 'latest-spotify-downloader.p.rapidapi.com'
+				}
+			};
+
+			fetch(`https://latest-spotify-downloader.p.rapidapi.com/search?q=${songName}&type=track`, options)
+				.then(response => response.json())
+				.then(response => {
+					const track = response.tracks.items[0];
+					if (!track) {
+						downloadLinkContainer.innerHTML = '<p>No track found. Please try again.</p>';
+						return;
+					}
+					const trackId = track.id;
+					const downloadLink = `https://latest-spotify-downloader.p.rapidapi.com/track/${trackId}`;
+					downloadLinkContainer.innerHTML = `<a href="${downloadLink}" download="${track.name}">${track.name}</a>`;
+				})
+				.catch(err => console.error(err));
+		}
 	</script>
 </body>
 </html>
