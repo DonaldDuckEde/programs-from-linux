@@ -4,6 +4,7 @@
 	<title>OpenAI Chat</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
 </head>
 <body>
 	<h1>OpenAI Chat</h1>
@@ -22,7 +23,6 @@
 		fetch('https://openai80.p.rapidapi.com/chat/completions', options)
 			.then(response => response.json())
 			.then(response => {
-				// display the response on the page
 				document.getElementById("response").innerHTML = JSON.stringify(response);
 			})
 			.catch(err => console.error(err));
