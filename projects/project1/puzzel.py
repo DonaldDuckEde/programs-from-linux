@@ -2,6 +2,7 @@ import random
 
 print("Welkom bij steen, papier, schaar")
 
+# score update functions
 def puntGelijk():
     print("Gelijk spel.")
     gelijk += 1
