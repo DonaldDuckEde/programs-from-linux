@@ -6,7 +6,7 @@ payload = "{\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [\n        {\
 
 headers = {
     'content-type': "application/json",
-    'X-RapidAPI-Key': "bd7537db29mshc28ea09170e58efp1afa22jsn8690e58746f2",
+    'X-RapidAPI-Key': "own API key",
     'X-RapidAPI-Host': "openai80.p.rapidapi.com"
 }
 
