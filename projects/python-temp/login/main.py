@@ -1,3 +1,4 @@
 path = "o/,project/,"
 def main():
-    command = input(f({path} ))
+    while True:
+        command = input(f"{path} ")
