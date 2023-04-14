@@ -13,4 +13,5 @@ while True:
     elif command == "keys":
         print("welcome to the key environment.")
         changeKey = input("Key to change:")
-        
+        if changeKey == "sudo":
+            newSudoPass = input("Sudo key: ")
