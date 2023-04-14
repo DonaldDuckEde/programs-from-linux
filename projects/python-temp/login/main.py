@@ -54,4 +54,7 @@ while True:
         file_name = input("Enter file name: ")
         file_ext = input("Enter file extension: ")
         my_file = my_path.add_file(f"{file_name}.{file_ext}")
-        print(f"File created at {my_file}")
+        print(f"File created at {my_file}.{file_ext}")
+        
+    elif command == "quit":
+        exit(0)
