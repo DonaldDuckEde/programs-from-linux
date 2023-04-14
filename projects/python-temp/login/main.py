@@ -17,6 +17,10 @@ class VirtualPath:
     
 my_path = VirtualPath('root')
 
+def split_command(command):
+    command_list = command.split()
+    return command_list
+
 def strikes(strikes):
     global warnStrikes
     warnStrikes += 1
@@ -59,12 +63,6 @@ while True:
     elif command == "cd":
         new_path = input("Enter path: ")
         my_path = my_path.join(new_path)
-        if my_path.path == "root":
-            my_path = VirtualPath('root')
-        else:
-            enter()
-        if not sudoPower:
-            strikes(warnStrikes)
     elif  command == "ls":
         enter()
         print(my_path)
