@@ -1,6 +1,6 @@
 path = "o/,project/,"
 sudoPower = False
-
+sudoPass = "terminal"
 
 while True:
     command = input(f"{path}$ ")
@@ -15,3 +15,4 @@ while True:
         changeKey = input("Key to change:")
         if changeKey == "sudo":
             newSudoPass = input("Sudo key: ")
+            if newSudoPass != sudoPass
