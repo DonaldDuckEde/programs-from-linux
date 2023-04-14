@@ -59,6 +59,12 @@ while True:
     elif command == "cd":
         new_path = input("Enter path: ")
         my_path = my_path.join(new_path)
+        if my_path.path == "root":
+            my_path = VirtualPath('root')
+        else:
+            enter()
+        if not sudoPower:
+            strikes(warnStrikes)
     elif  command == "ls":
         enter()
         print(my_path)
