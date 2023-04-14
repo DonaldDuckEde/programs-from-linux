@@ -49,12 +49,16 @@ while True:
     elif command == "mkdir":
         new_folder = input("Enter folder name: ")
         my_path = my_path.join(new_folder)
-        
     elif command == "mkfile":
         file_name = input("Enter file name: ")
         file_ext = input("Enter file extension: ")
         my_file = my_path.add_file(f"{file_name}.{file_ext}")
         print(f"File created at {my_file}.{file_ext}")
-        
     elif command == "quit":
         exit(0)
+    elif command == "cd":
+        new_path = input("Enter path: ")
+        my_path = my_path.join(new_path)
+    elif  command == "ls":
+        enter()
+        print(my_path)
