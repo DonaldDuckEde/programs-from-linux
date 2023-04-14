@@ -9,15 +9,19 @@ class VirtualPath:
     def join(self, *paths):
         return VirtualPath('/'.join([self.path] + list(paths)))
     
+    def add_file(self, filename):
+        return VirtualPath('.'.join([self.path, filename]))
+    
     def __str__(self):
         return self.path
-
+    
 my_path = VirtualPath('root')
 
 def strikes(strikes):
+    global warnStrikes
     warnStrikes += 1
     if warnStrikes == 3:
-        print("You have to much false uses please restart the evenirement.")
+        print("You have too many false uses, please restart the environment.")
         exit(0)
 
 def enter():
@@ -33,15 +37,21 @@ while True:
             print("Please enter a valid sudo key: ")
     elif command == "keys":
         enter()
-        print("welcome to the key environment.")
+        print("Welcome to the key environment.")
         changeKey = input("Key to change: ")
         
         if changeKey == "sudo":
             newSudoPass = input("Sudo key: ")
             if newSudoPass != sudoPass:
-                newSudoPass = sudoPass
+                sudoPass = newSudoPass
             else:
                 strikes(warnStrikes)
     elif command == "mkdir":
         new_folder = input("Enter folder name: ")
         my_path = my_path.join(new_folder)
+        
+    elif command == "mkfile":
+        file_name = input("Enter file name: ")
+        file_ext = input("Enter file extension: ")
+        my_file = my_path.add_file(f"{file_name}.{file_ext}")
+        print(f"File created at {my_file}")
