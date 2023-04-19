@@ -1,0 +1,5 @@
+pandas
+matplotlib
+shutil
+unittest
+os
