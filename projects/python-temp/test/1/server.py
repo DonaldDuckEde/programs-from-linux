@@ -1,7 +1,7 @@
 import socket
 import threading
 
-HOST = '192.168.178.210'
+HOST = '192.168.68.111'
 PORT = 50007
 
 def handle_client(conn, addr):
@@ -15,7 +15,7 @@ def handle_client(conn, addr):
     
     if data == "quit":
         conn.close()
-    
+
     conn.sendall(data)
     conn.close()
 

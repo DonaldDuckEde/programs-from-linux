@@ -1,6 +1,6 @@
 import socket
 
-HOST = '192.168.178.210'
+HOST = '192.168.68.111'
 PORT = 50007
 
 for i in range(999):
