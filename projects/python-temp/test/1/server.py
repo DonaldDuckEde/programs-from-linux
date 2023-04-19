@@ -14,7 +14,7 @@ def handle_client(conn, addr):
     data = rawData.decode('utf-8')
     
     if data == "quit":
-        
+        conn.close()
     
     conn.sendall(data)
     conn.close()
