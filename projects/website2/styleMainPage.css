@@ -1,0 +1,117 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #292929;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    float: left;
+    color: #fff;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  nav a:hover {
+    opacity: 1;
+  }
+  
+  /* Main content styles */
+  main {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  main p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #ff8000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff9900;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* Global styles for dark mode */
+    body {
+      background-color: #292929;
+      color: #fff;
+    }
+    
+    /* Header styles for dark mode */
+    header {
+      background-color: #202020;
+    }
+    
+    header h1 {
+      color: #fff;
+    }
+    
+    nav a {
+      color: #fff;
+      opacity: 0.8;
+    }
+    
+    nav a:hover {
+      opacity: 1;
+    }
+    
+    /* Main content styles for dark mode */
+    main {
+      background-color: #292929;
+    }
